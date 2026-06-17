@@ -57,22 +57,3 @@ src/
   styles/         Estilos globales y tokens de diseño
 ```
 
-## Funcionalidades
-
-- **Inicio**: presentación y cómo funciona.
-- **Publicaciones**: listado con búsqueda y filtros (perdidas / encontradas / resueltas).
-- **Detalle**: vista enriquecida vía el orquestador (publicación + mascota), contacto y borrado.
-- **Reportar**: formulario que crea mascota + publicación en una sola petición (orquestador),
-  con captura de geolocalización del navegador.
-- **Mascotas**: directorio con filtros por estado y eliminación.
-- **Geolocalización**: cálculo de distancia, búsqueda por radio y registro de ubicación.
-
-## Endpoints del BFF que consume
-
-- `GET/POST/PUT/DELETE /ms-publicacion/publicaciones`
-- `GET/POST/DELETE /ms-mascotas/pets`
-- `POST /bff/orquestador/publicaciones/completo`
-- `GET /bff/orquestador/publicaciones/{id}/detalle`
-- `POST /bff/geolocalizacion/distance`
-- `POST /bff/geolocalizacion/radius`
-- `POST /bff/geolocalizacion/locations`
